@@ -12,7 +12,14 @@
     <title>Nguyễn Văn Phương</title>
   </head>
   <body>
+
   <div class="background">
+    <audio id="background-music"  autoplay loop>
+      <source src="asset/videos/thangmay.mp3" type="audio/mpeg">
+      Trình duyệt của bạn không hỗ trợ phần tử âm thanh.
+  </audio>
+
+
     <div class="section-one">
       <div class="container">
           <div class="inner-image">
@@ -75,10 +82,15 @@
     </div>
 
 
+
+    <script>
+      document.body.addEventListener('click', function() {
+          var audio = document.getElementById('background-music');
+          audio.play();
+      }, { once: true });
+  </script>
   </div>
    
-
-
 
 
 
@@ -98,3 +110,5 @@
 
   </body>
 </html>
+
+
